@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo-App</title>
+    <link
+      rel="icon"
+      href="https://www.google.com/s2/u/0/favicons?domain=css-tricks.com"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="todo__container biground">
+      <div class="todo-container__contentholder">
+        <h1 class="todo__container--text">Todo-App</h1>
+        <form id="todo-form">
+          <input type="text" placeholder="Add todo..." />
+          <div class="form__actions">
+            <button type="submit" class="addBtn">Add</button>
+            <button type="button" class="clearBtn">Clear</button>
+          </div>
+        </form>
+        <ul class="todo-item__container"></ul>
+      </div>
+    </div>
+    <!-- Script -->
+    <script src="./app.js"></script>
+  </body>
+</html>

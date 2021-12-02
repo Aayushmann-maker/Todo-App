@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+}
+
+/* Utility Class */
+.biground {
+  border-radius: 8px;
+}
+
+.smallround {
+  border-radius: 3px;
+}
+
+button {
+  padding: 13px 20px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: all 0.1s;
+  font-family: inherit;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+.todo__container {
+  width: 90%;
+  max-width: 660px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.todo__container h1 {
+  text-align: center;
+  margin: 30px;
+}
+
+.todo-container__contentholder {
+  padding: 30px 50px;
+}
+
+#todo-form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+#todo-form input {
+  flex-basis: 70%;
+  padding: 8px;
+  border: 1px solid rgba(51, 51, 51, 0.712);
+  border-radius: 3px;
+  font-family: inherit;
+}
+
+#todo-form input:focus {
+  outline: none;
+}
+
+#todo-form input:placeholder-shown {
+  font-family: inherit;
+}
+
+.addBtn {
+  background-color: seagreen;
+}
+
+.clearBtn {
+  background-color: black;
+}
+
+.deleteBtn {
+  background-color: tomato;
+}
+
+.todo-item {
+  margin-top: 10px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  list-style: none;
+}
+
+.todo-item__content {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.todo-item__content span {
+  flex-grow: 1;
+}
+
+@media (max-width: 650px) {
+  #todo-form {
+    flex-flow: column wrap;
+    gap: 20px;
+  }
+  #todo-form .form__actions {
+    align-self: center;
+  }
+  button {
+    padding: 10px 20px;
+  }
+}
